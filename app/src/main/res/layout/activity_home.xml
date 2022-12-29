@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint=" Enter Products name "
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingStart="8dp"
+        android:textColorHint="#40407D" />
+
+
+    <EditText
+        android:id="@+id/product_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Enter quantity"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="8dp"
+        android:textColorHint="#030409" />
+
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_quantity"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Enter price in Rwf"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="8dp"
+        android:textColorHint="#020307" />
+
+    <Button
+        android:id="@+id/btn_Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_price"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Add Product"
+        android:textColor="#0B0A0A"
+        android:textColorHint="#5b649a" />
+
+    <ListView
+        android:id="@+id/lv_customerList"
+        android:layout_width="391dp"
+        android:layout_height="567dp"
+        android:layout_below="@+id/btn_Add"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="6dp"
+
+        android:layout_marginEnd="1dp"
+        android:background="#5BDFE1"
+
+        android:backgroundTintMode="multiply"
+        android:paddingLeft="8dp" />
+</RelativeLayout>
